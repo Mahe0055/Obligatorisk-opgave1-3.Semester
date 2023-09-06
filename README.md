@@ -2,32 +2,40 @@ p# Obligatorisk-opgave1-3.Semester
 
 ## Øvelse 1 - opsætning
 - HTTP-verb + Endpoint: Post https://api.dropboxapi.com/2/files/list_folder
-- Body request: 
-{"path":"",
+- Body request:
+``` 
+{
+"path":"",
 "recursive":false,
 "include_media_info":false,
 "include_deleted":false,
 "include_has_explicit_shared_members":false,
 "include_mounted_folders":true,
-"include_non_downloadable_files":true}
+"include_non_downloadable_files":true
+}
+```
 - Response:
 200 OK
+``` 
 {
-    "entries": [],
-    "cursor": "AAEfIahUXnafl2Uo382YsTCTNdMkFJdzBKNKjOMybULNtSKaoKW11C9U14WO2ynp7hX1QalNRi-GtaLENPEOye7fVS66oJjg-f9yyJmDYi_XmZcigN-CfKKRpdqlAi4W6y8D2NKWoKs_3Bg5G_SFlJGJZ5qxpHN8TKi_r02SztiDwUym3sSMNKl8Hbl9gR9fgWQ",
-    "has_more": false
+"entries": [],
+"cursor": "AAEfIahUXnafl2Uo382YsTCTNdMkFJdzBKNKjOMybULNtSKaoKW11C9U14WO2ynp7hX1QalNRi-GtaLENPEOye7fVS66oJjg-f9yyJmDYi_XmZcigN-CfKKRpdqlAi4W6y8D2NKWoKs_3Bg5G_SFlJGJZ5qxpHN8TKi_r02SztiDwUym3sSMNKl8Hbl9gR9fgWQ",
+"has_more": false
 }
-
+``` 
 
 ## Øvelse 2 - opret en mappe
 - HTTP-verb + Endpoint: Post https://api.dropboxapi.com/2/files/create_folder_v2
-- Body request: 
+- Body request:
+``` 
 {
-    "autorename": false,
-    "path": "/Obligatorisk%20opgave%201%20-%203.%20semester/testmappe"
+"autorename": false,
+"path": "/Obligatorisk%20opgave%201%20-%203.%20semester/testmappe"
 }
+```
 - Response:
 200 OK
+```
 {
     "metadata": {
         "name": "testmappe",
@@ -36,19 +44,22 @@ p# Obligatorisk-opgave1-3.Semester
         "id": "id:NvXdVRLJDdsAAAAAAAAACA"
     }
 }
-
+```
 
 ## Øvelse 3 - hent mappe detaljer
 - HTTP-verb + Endpoint: Post https://api.dropboxapi.com/2/files/get_metadata
-- Body request: 
+- Body request:
+```
 {
-    "include_deleted": false,
-    "include_has_explicit_shared_members": false,
-    "include_media_info": false,
-    "path": "/Obligatorisk%20opgave%201%20-%203.%20semester/testmappe"
+"include_deleted": false,
+"include_has_explicit_shared_members": false,
+"include_media_info": false,
+"path": "/Obligatorisk%20opgave%201%20-%203.%20semester/testmappe"
 }
+``` 
 - Response:
 200 OK
+``` 
 {
     ".tag": "folder",
     "name": "testmappe",
@@ -56,6 +67,6 @@ p# Obligatorisk-opgave1-3.Semester
     "path_display": "/Obligatorisk%20opgave%201%20-%203.%20semester/testmappe",
     "id": "id:NvXdVRLJDdsAAAAAAAAACA"
 }
-
+``` 
 
 ## Øvelse 4 - upload en fil
