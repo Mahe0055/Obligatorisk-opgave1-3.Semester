@@ -30,7 +30,7 @@
 ``` 
 {
 "autorename": false,
-"path": "/Obligatorisk%20opgave%201%20-%203.%20semester/testmappe"
+"path": "/Obligatorisk%20opgave%201%20-%203.%20semester/TestMappe"
 }
 ```
 - Response:
@@ -39,8 +39,8 @@
 {
     "metadata": {
         "name": "testmappe",
-        "path_lower": "/obligatorisk%20opgave%201%20-%203.%20semester/testmappe",
-        "path_display": "/Obligatorisk%20opgave%201%20-%203.%20semester/testmappe",
+        "path_lower": "/obligatorisk%20opgave%201%20-%203.%20semester/TestMappe",
+        "path_display": "/Obligatorisk%20opgave%201%20-%203.%20semester/TestMappe",
         "id": "id:NvXdVRLJDdsAAAAAAAAACA"
     }
 }
@@ -54,7 +54,7 @@
 "include_deleted": false,
 "include_has_explicit_shared_members": false,
 "include_media_info": false,
-"path": "/Obligatorisk%20opgave%201%20-%203.%20semester/testmappe"
+"path": "/Obligatorisk%20opgave%201%20-%203.%20semester/TestMappe"
 }
 ``` 
 - Response:
@@ -63,8 +63,8 @@
 {
     ".tag": "folder",
     "name": "testmappe",
-    "path_lower": "/obligatorisk%20opgave%201%20-%203.%20semester/testmappe",
-    "path_display": "/Obligatorisk%20opgave%201%20-%203.%20semester/testmappe",
+    "path_lower": "/obligatorisk%20opgave%201%20-%203.%20semester/TestMappe",
+    "path_display": "/Obligatorisk%20opgave%201%20-%203.%20semester/TestMappe",
     "id": "id:NvXdVRLJDdsAAAAAAAAACA"
 }
 ``` 
