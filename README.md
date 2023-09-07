@@ -125,3 +125,132 @@ binary - selected file: Random cat.jpg
 ```
 
 ## Øvelse 6 - søg efter filer
+- HTTP-verb + Endpoint: Post https://api.dropboxapi.com/2/files/search_v2
+- Body request:
+```
+{
+    "match_field_options": {
+        "include_highlights": false
+    },
+    "options": {
+        "file_status": "active",
+        "filename_only": false,
+        "max_results": 10,
+        "path": "/TestMappe"
+    },
+    "query": "cat"
+}
+``` 
+- Response: 200 OK. Jeg uploaded 5 filer, slettede 1 og respons viser alle resterende 4 filer.
+```
+{
+    "has_more": false,
+    "matches": [
+        {
+            "match_type": {
+                ".tag": "filename_and_content"
+            },
+            "metadata": {
+                ".tag": "metadata",
+                "metadata": {
+                    ".tag": "file",
+                    "client_modified": "2023-09-07T03:52:59Z",
+                    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "id": "id:NvXdVRLJDdsAAAAAAAAAHQ",
+                    "is_downloadable": true,
+                    "name": "Random_cat.jpg5",
+                    "path_display": "/TestMappe/Random_cat.jpg5",
+                    "path_lower": "/testmappe/random_cat.jpg5",
+                    "rev": "01604bccbcbdd17000000010d032ad1",
+                    "server_modified": "2023-09-06T16:58:32Z",
+                    "sharing_info": {
+                        "modified_by": "dbid:AADIGY-7gl-2MkF9BiRYPuTYNEMcaXrqMsE",
+                        "parent_shared_folder_id": "4513278673",
+                        "read_only": false
+                    },
+                    "size": 4573
+                }
+            }
+        },
+        {
+            "match_type": {
+                ".tag": "filename_and_content"
+            },
+            "metadata": {
+                ".tag": "metadata",
+                "metadata": {
+                    ".tag": "file",
+                    "client_modified": "2023-09-06T16:53:11Z",
+                    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "id": "id:NvXdVRLJDdsAAAAAAAAAGQ",
+                    "is_downloadable": true,
+                    "name": "Random_cat.jpg",
+                    "path_display": "/TestMappe/Random_cat.jpg",
+                    "path_lower": "/testmappe/random_cat.jpg",
+                    "rev": "01604b3942d5216000000010d032ad1",
+                    "server_modified": "2023-09-06T16:58:32Z",
+                    "sharing_info": {
+                        "modified_by": "dbid:AADIGY-7gl-2MkF9BiRYPuTYNEMcaXrqMsE",
+                        "parent_shared_folder_id": "4513278673",
+                        "read_only": false
+                    },
+                    "size": 11096
+                }
+            }
+        },
+        {
+            "match_type": {
+                ".tag": "filename_and_content"
+            },
+            "metadata": {
+                ".tag": "metadata",
+                "metadata": {
+                    ".tag": "file",
+                    "client_modified": "2023-09-06T16:57:29Z",
+                    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "id": "id:NvXdVRLJDdsAAAAAAAAAGg",
+                    "is_downloadable": true,
+                    "name": "Random_cat.jpg2",
+                    "path_display": "/TestMappe/Random_cat.jpg2",
+                    "path_lower": "/testmappe/random_cat.jpg2",
+                    "rev": "01604b3a3897779000000010d032ad1",
+                    "server_modified": "2023-09-06T16:58:32Z",
+                    "sharing_info": {
+                        "modified_by": "dbid:AADIGY-7gl-2MkF9BiRYPuTYNEMcaXrqMsE",
+                        "parent_shared_folder_id": "4513278673",
+                        "read_only": false
+                    },
+                    "size": 6107
+                }
+            }
+        },
+        {
+            "match_type": {
+                ".tag": "filename_and_content"
+            },
+            "metadata": {
+                ".tag": "metadata",
+                "metadata": {
+                    ".tag": "file",
+                    "client_modified": "2023-09-06T16:58:31Z",
+                    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "id": "id:NvXdVRLJDdsAAAAAAAAAGw",
+                    "is_downloadable": true,
+                    "name": "Random_cat.jpg3",
+                    "path_display": "/TestMappe/Random_cat.jpg3",
+                    "path_lower": "/testmappe/random_cat.jpg3",
+                    "rev": "01604b3a74421fd000000010d032ad1",
+                    "server_modified": "2023-09-06T16:58:32Z",
+                    "sharing_info": {
+                        "modified_by": "dbid:AADIGY-7gl-2MkF9BiRYPuTYNEMcaXrqMsE",
+                        "parent_shared_folder_id": "4513278673",
+                        "read_only": false
+                    },
+                    "size": 4982
+                }
+            }
+        }
+    ]
+}
+```
+## Øvelse 7 - søg efter filer
