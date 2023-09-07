@@ -124,7 +124,7 @@ binary - selected file: Random cat.jpg
 }
 ```
 
-## Øvelse 6 - søg efter filer
+## Øvelse 7 - søg efter filer
 - HTTP-verb + Endpoint: Post https://api.dropboxapi.com/2/files/search_v2
 - Body request:
 ```
@@ -253,4 +253,4 @@ binary - selected file: Random cat.jpg
     ]
 }
 ```
-## Øvelse 7 - søg efter filer
+## Øvelse 8 - flyt en fil
