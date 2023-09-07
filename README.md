@@ -319,4 +319,4 @@ Jeg flyttde et billede til en anden mappe/folder (TestMappe2) i forrige opgave o
 
 ## Øvelse 10 - Brug JavaScript's Fetch med Dropbox API
 
-## Øvelse 11 - Er [https://api.dropboxapi.com/2/] Restfull or not?
+## Øvelse 11 - Er https://api.dropboxapi.com/2/ Restfull or not?
