@@ -253,4 +253,36 @@ binary - selected file: Random cat.jpg
     ]
 }
 ```
+
 ## Øvelse 8 - flyt en fil
+- HTTP-verb + Endpoint: Post https://api.dropboxapi.com/2/files/move_v2
+- Body request:
+```
+{
+"allow_ownership_transfer": false,
+"allow_shared_folder": false,
+"autorename": false,
+"from_path": "/TestMappe/Random_cat.jpg5",
+"to_path": "/TestMappe2/Random_cat.jpg5"
+}
+``` 
+- Response: 200 OK
+```
+{
+    "metadata": {
+        ".tag": "file",
+        "name": "Random_cat.jpg5",
+        "path_lower": "/testmappe2/random_cat.jpg5",
+        "path_display": "/TestMappe2/Random_cat.jpg5",
+        "id": "id:NvXdVRLJDdsAAAAAAAAAHQ",
+        "client_modified": "2023-09-07T03:52:59Z",
+        "server_modified": "2023-09-07T10:52:48Z",
+        "rev": "01604c2a925ee2e000000010d032ad1",
+        "size": 4573,
+        "is_downloadable": true,
+        "content_hash": "a7ac543469af7cb837c5d025fb3364d88397aa7344f1675f59eb8369f7e8dbb3"
+    }
+}
+```
+
+## Øvelse 9 - kopier en fil
