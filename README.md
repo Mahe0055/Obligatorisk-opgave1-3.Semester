@@ -98,3 +98,30 @@ binary - selected file: Random cat.jpg
 ```
 
 ## Øvelse 5 - slet en fil
+- HTTP-verb + Endpoint: Post https://api.dropboxapi.com/2/files/delete_v2
+- Body request:
+```
+{
+    "path": "/TestMappe/Random_cat.jpg4"
+}
+``` 
+- Response: 200 OK
+```
+{
+    "metadata": {
+        ".tag": "file",
+        "name": "Random_cat.jpg4",
+        "path_lower": "/testmappe/random_cat.jpg4",
+        "path_display": "/TestMappe/Random_cat.jpg4",
+        "id": "id:NvXdVRLJDdsAAAAAAAAAHA",
+        "client_modified": "2023-09-06T16:59:11Z",
+        "server_modified": "2023-09-06T16:59:12Z",
+        "rev": "01604b3a9a63553000000010d032ad1",
+        "size": 9155,
+        "is_downloadable": true,
+        "content_hash": "3858293c590b603a663d7bb5ee9511402fa2a0b129ff471db21a959d562161e0"
+    }
+}
+```
+
+## Øvelse 6 - søg efter filer
