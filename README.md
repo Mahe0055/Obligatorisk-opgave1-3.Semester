@@ -70,3 +70,31 @@
 ``` 
 
 ## Øvelse 4 - upload en fil
+- HTTP-verb + Endpoint: Post https://content.dropboxapi.com/2/files/upload
+- Headers:
+  1. Authorization = ACCESS TOKEN
+  2. Content-type = application/octet-stream
+  3. Dropbox-API-Arg = {"autorename": false, "mode":"add", "mute":false, "path": "/TestMappe/Random_cat.jpg", "strict_conflict": false}
+- Body request:
+```
+{
+binary - selected file: Random cat.jpg
+}
+``` 
+- Response: 200 OK
+```
+{
+    "name": "Random_cat.jpg",
+    "path_lower": "/testmappe/random_cat.jpg",
+    "path_display": "/TestMappe/Random_cat.jpg",
+    "id": "id:NvXdVRLJDdsAAAAAAAAAHQ",
+    "client_modified": "2023-09-07T03:52:59Z",
+    "server_modified": "2023-09-07T03:52:59Z",
+    "rev": "01604bccbcbdd17000000010d032ad1",
+    "size": 4573,
+    "is_downloadable": true,
+    "content_hash": "a7ac543469af7cb837c5d025fb3364d88397aa7344f1675f59eb8369f7e8dbb3"
+}
+```
+
+## Øvelse 5 - slet en fil
