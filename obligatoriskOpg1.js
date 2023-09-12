@@ -2,7 +2,7 @@
 function getData() {
 
     const myHeaders = new Headers();
-    myHeaders.append("Authorization", "Bearer sl.BllToSGCFvPMwzgek-AimUVSUCEoYM8q4KdO0m6kFdMJAGJQoWGLm45rKalfEglzlh_RQybYNBkG3N3o6TGY0gIUKVSuIWvSFX8DUzo4oEVmt9YyfnyuwpUVuVg-e7A5X9TMCkkpnlSUhTTu5gi7");
+    myHeaders.append("Authorization", "Bearer ACCESS_TOKEN");
     myHeaders.append("Content-Type", "application/json");
 
     const raw = JSON.stringify({
